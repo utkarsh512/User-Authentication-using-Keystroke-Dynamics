@@ -7,11 +7,11 @@ and private data of users on the basis of keystroke dynamics.
 We run the code provided to us for feature extraction. Given the continuous data collected,
 the extracted features are as follows:
 * 26 hold times for the letters A to Z
-* 676 (26 ✖ 26) latency values for each pairing: AA,AB...ZY,ZZ
+* 676 (26 x 26) latency values for each pairing: AA,AB...ZY,ZZ
 
 We ignore the hold and latency times of other characters on the keyboard like ‘Spacebar’ or
 other keys like Tab, Ctrl or Backspace.
-We take these 26 + 26 ✖ 26 = 702 values as a feature vector for one class and use it to
+We take these 26 + 26 x 26 = 702 values as a feature vector for one class and use it to
 classify from several classes. We take the average of all hold time and latency values for
 one particular key or one particular pair of keys as this helps in smoothing the values and
 returns an accurate representation of the several values.
